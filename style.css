@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+.empty{
+    flex-shrink: 0;
+    width: inherit;
+    height: 40vh;
+}
+
+.mainpane{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    justify-content: center;
+    align-self: center;
+    width: 13vw;
+}
+.list{
+    width: 17vw;
+}
+.todo-item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color: bisque;
+    user-select: none;
+}
+.todo-item button{
+    border: 0px;
+    background-color: bisque;
+}
+.todo-item span{
+    flex-grow: 1;
+}
+.done{
+    text-decoration: line-through;
+}
